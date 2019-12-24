@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.gthree.test.mapper.UserMapper">
+
+	<select id="getOne" resultType="com.gthree.test.model.User">
+		select * from user where id = #{id}
+	</select>
+	
+	<select id="getAll" resultType="com.gthree.test.model.User">
+		select * from user
+	</select>
+	
+	<update id="updateByPrimaryKey">
+		update user set name = '张三99999999' where id = #{id}
+	</update>
+	
+</mapper>
