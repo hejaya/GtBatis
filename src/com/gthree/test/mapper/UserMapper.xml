@@ -12,5 +12,9 @@
 	<update id="updateByPrimaryKey">
 		update user set name = '张三99999999' where id = #{id}
 	</update>
-	
+
+	<update id="deleteByPrimaryKey">
+		delete from user where id = #{id}
+	</update>
+
 </mapper>

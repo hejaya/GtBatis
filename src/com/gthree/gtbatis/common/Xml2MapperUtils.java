@@ -61,6 +61,8 @@ public final class Xml2MapperUtils {
                     statement.setSqlCommandType(Constant.SqlType.UPDATE);
                 } else if (Constant.SqlType.INSERT.value().equals(elName)) {//insert类型
                     statement.setSqlCommandType(Constant.SqlType.INSERT);
+                }  else if (Constant.SqlType.DELETE.value().equals(elName)) {//delete类型
+                    statement.setSqlCommandType(Constant.SqlType.DELETE);
                 } else {
                     statement.setSqlCommandType(Constant.SqlType.DEFAULT);
                     throw new RuntimeException("不支持此xml标签解析");

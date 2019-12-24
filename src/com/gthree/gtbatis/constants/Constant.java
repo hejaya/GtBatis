@@ -41,6 +41,7 @@ public interface Constant {
         SELECT("select"),
         INSERT("insert"),
         UPDATE("update"),
+        DELETE("delete"),
         DEFAULT("default");
 
         private String value;

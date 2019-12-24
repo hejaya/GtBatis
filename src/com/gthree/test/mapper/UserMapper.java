@@ -16,4 +16,6 @@ public interface UserMapper {
     List<User> getAll();
 
     void updateByPrimaryKey(Integer id);
+
+    void deleteByPrimaryKey(Integer id);
 }

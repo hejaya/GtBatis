@@ -17,6 +17,8 @@ public interface SqlSession {
 
     void insert(String statementId, Object parameter);
 
+    void delete(String statementId, Object parameter);
+
     <T> T getMapper(Class<T> paramClass);
 
     Configuration getConfiguration();

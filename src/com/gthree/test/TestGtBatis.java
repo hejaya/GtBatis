@@ -42,5 +42,6 @@ public class TestGtBatis {
         List<User> userList = userMapper.getAll();
         System.out.println("users = " + userList);
         //userMapper.updateByPrimaryKey(1);
+        userMapper.deleteByPrimaryKey(10);
     }
 }
